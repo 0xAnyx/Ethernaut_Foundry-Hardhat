@@ -1,0 +1,9 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+libs = ['node_modules', 'lib']
+test = 'test'
+cache_path  = 'cache_forge'
+solc_version = "0.8.20"
+eth_rpc_url = "https://goerli.infura.io/v3/9063986e67da4f37939ca2aec6708f9f"
+etherscan_api_key = 'T5NP9E646RSBETRAVX4M9AWS7FPYSQYUWH'
