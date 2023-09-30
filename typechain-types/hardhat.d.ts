@@ -22,6 +22,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ICoinFlip__factory>;
     getContractFactory(
+      name: "HackTelephone",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.HackTelephone__factory>;
+    getContractFactory(
       name: "CoinFlip",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.CoinFlip__factory>;
@@ -29,6 +33,10 @@ declare module "hardhat/types/runtime" {
       name: "Fallback",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Fallback__factory>;
+    getContractFactory(
+      name: "Telephone",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Telephone__factory>;
 
     getContractAt(
       name: "CoinFlipGuess",
@@ -41,6 +49,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.ICoinFlip>;
     getContractAt(
+      name: "HackTelephone",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.HackTelephone>;
+    getContractAt(
       name: "CoinFlip",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -50,6 +63,11 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.Fallback>;
+    getContractAt(
+      name: "Telephone",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Telephone>;
 
     deployContract(
       name: "CoinFlipGuess",
@@ -60,6 +78,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.ICoinFlip>;
     deployContract(
+      name: "HackTelephone",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.HackTelephone>;
+    deployContract(
       name: "CoinFlip",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.CoinFlip>;
@@ -67,6 +89,10 @@ declare module "hardhat/types/runtime" {
       name: "Fallback",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Fallback>;
+    deployContract(
+      name: "Telephone",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Telephone>;
 
     deployContract(
       name: "CoinFlipGuess",
@@ -79,6 +105,11 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.ICoinFlip>;
     deployContract(
+      name: "HackTelephone",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.HackTelephone>;
+    deployContract(
       name: "CoinFlip",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -88,6 +119,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Fallback>;
+    deployContract(
+      name: "Telephone",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Telephone>;
 
     // default types
     getContractFactory(

@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as hackCoinFlipSol from "./HackCoinFlip.sol";
+export { HackTelephone__factory } from "./HackTelephone__factory";

@@ -3,3 +3,4 @@
 /* eslint-disable */
 import type * as hackCoinFlipSol from "./HackCoinFlip.sol";
 export type { hackCoinFlipSol };
+export type { HackTelephone } from "./HackTelephone";

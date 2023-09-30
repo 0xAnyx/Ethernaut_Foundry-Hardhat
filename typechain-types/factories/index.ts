@@ -4,3 +4,4 @@
 export * as attack from "./attack";
 export { CoinFlip__factory } from "./CoinFlip__factory";
 export { Fallback__factory } from "./Fallback__factory";
+export { Telephone__factory } from "./Telephone__factory";
